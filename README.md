@@ -2,7 +2,7 @@
 
 ## Overview of Project
 
-This green stock analysis is for the client, Steve, to determine which stocks in which his parents should invest. The data was analyzed in Microsoft Excel VBA, initially with code that looped through the dataset 12 times but refactored to run through the data a single time in order to make it more efficient and allow the client to expand this code to the entire stock market in the future.
+This green stock analysis is for the client, Steve, to determine the stocks in which his parents should invest. The data was analyzed in Microsoft Excel VBA, initially with code that looped through the dataset 12 times but refactored to run through the data a single time in order to make it more efficient and allow the client to expand this code to the entire stock market in the future.
 
 ## Data
 
@@ -47,7 +47,7 @@ The 12 green stocks performed well in 2017. All but one stock had positive retur
 |![Screen Shot 2022-06-17 at 5 25 18 PM](https://user-images.githubusercontent.com/106405775/174408528-2f566a15-58ad-41ee-8772-387fc3b75948.png)|![Screen Shot 2022-06-17 at 5 25 49 PM](https://user-images.githubusercontent.com/106405775/174408569-869fd6ce-27ff-49b8-93f5-6ada41e8428e.png)|
 
 ### Code Efficiency 
-Instead of using a nested loop as shown below, the refactored code used the tickerIndex to analyze the data as shown below. 
+Instead of using a nested loop, the refactored code used the tickerIndex to analyze the data as shown below. 
 
  
       For i = 2 To RowCount
@@ -85,4 +85,4 @@ Refactoring can lead to better, more effective code. The process can remove redu
 
 ### Advantages and Disadvantages to Refactoring Stock Analysis Code in VBA 
 
-The refactored code for the green stock analysis decreased the run time from .5644 seconds to .2109 second. While the dataset only contained two sheets with 3,112 lines in each, this code would work better for analyzing the entire stock market as the client intended.
+The refactored code for the green stock analysis decreased the run time from .5644 seconds to .2109 second. While the dataset only contained two sheets with 3,112 lines in each, this code would work better for analyzing the entire stock market as the client intends to do in the future.
